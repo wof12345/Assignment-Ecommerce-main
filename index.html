@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./upcoming.css" />
+    <link rel="stylesheet" href="./sliding.css" />
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link href="test-slider-fullwidth.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+
+    <!-- <script defer src="./data.js"></script> -->
+    <script defer src="./index.js"></script>
+    <script defer src="./cart.js"></script>
+    <script defer src="./sliding.js"></script>
+  </head>
+
+  <body>
+    <nav class="nav fixed-top">
+      <img
+        src="./img/ecommerce.png"
+        class="img-fluid"
+        height="70px"
+        width="80px"
+        alt=""
+      />
+
+      <navitems class="nav__links">
+        <hovertoextend> Menu </hovertoextend>
+
+        <navitem class="nav__item">
+          <a class="nav__link" href="#">Home</a>
+        </navitem>
+        <navitem class="nav__item">
+          <a class="nav__link" href="#productive">Product</a>
+        </navitem>
+        <navitem class="nav__item">
+          <a class="nav__link" href="#Reviews">Review</a>
+        </navitem>
+        <navitem class="nav__item">
+          <button class="nav__link--btn">Contact</button>
+        </navitem>
+      </navitems>
+    </nav>
+
+    <main class="main_outer_container">
+      <h2>Featured</h2>
+      <section class="product_slide" id="#homes">
+        <div class="slide_left slide_btn">
+          <div class="slide_left_1"></div>
+        </div>
+
+        <div class="product_slider"></div>
+
+        <div class="page_no"></div>
+
+        <div class="slide_right slide_btn">
+          <div class="slide_right_1"></div>
+        </div>
+      </section>
+
+      <!-- //Product -->
+
+      <h4 class="text-center">Our products</h4>
+      <section id="productive">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+              <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">
+                Products
+              </h4>
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+                  <div class="shadow-sm card mb-3 product">
+                    <img
+                      class="product-img"
+                      src="./img/bottle.jpg"
+                      alt="prd1"
+                      onmouseover="purify(this)"
+                      onmouseout="normalImg(this)"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info bold product-name">
+                        Water Bootle
+                      </h5>
+                      <p class="card-text text-success product-price">
+                        200 tk.
+                      </p>
+                      <button
+                        class="btn badge badge-pill badge-secondary mt-2 float-right"
+                        type="button"
+                        data-action="add-to-cart"
+                      >
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+                  <div class="shadow-sm card mb-3 product">
+                    <img
+                      class="product-img"
+                      src="./img/protector.jpg"
+                      alt="prd2"
+                      onmouseover="purify(this)"
+                      onmouseout="normalImg(this)"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info product-name">
+                        Phone Protector
+                      </h5>
+                      <p class="card-text text-success product-price">
+                        300 tk.
+                      </p>
+                      <button
+                        class="btn badge badge-pill badge-secondary mt-2 float-right"
+                        type="button"
+                        data-action="add-to-cart"
+                      >
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6 col-lg-6 col-xs-6">
+                  <div class="shadow-sm card mb-3 product">
+                    <img
+                      class="product-img"
+                      src="./img/usb.jpg"
+                      alt="prd3"
+                      onmouseover="purify(this)"
+                      onmouseout="normalImg(this)"
+                    />
+                    <div class="card-body">
+                      <h5 class="card-title text-info product-name">
+                        Boat Micro USB
+                      </h5>
+                      <p class="card-text text-success product-price">
+                        200 tk.
+                      </p>
+                      <button
+                        class="btn badge badge-pill badge-secondary mt-2 float-right"
+                        type="button"
+                        data-action="add-to-cart"
+                      >
+                        Add to cart
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12 col-lg-6 col-xs-12">
+              <h4 class="badge-pill badge-light mt-3 mb-3 p-2 text-center">
+                Cart
+              </h4>
+              <div class="cart"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ///////////////////   -->
+        <!-- upcoming -->
+      </section>
+      <section id="letsgoo">
+        <div class="container">
+          <h2 class="text-center pls">Upcomming Products</h2>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="sooner">
+                <div class="img-info">
+                  <img src="./img/protector.jpg" alt="" />
+                </div>
+                <div class="prod-info">
+                  <h3>Protector</h3>
+                  <button class="btn btn-danger">Pre Order</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sooner">
+                <div class="img-info">
+                  <img src="./img/bottle.jpg" alt="" />
+                </div>
+                <div class="prod-info">
+                  <h3>Water Bootle</h3>
+                  <button class="btn btn-danger">Pre Order</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="sooner">
+                <div class="img-info">
+                  <img src="./img/usb.jpg" alt="" />
+                </div>
+                <div class="prod-info">
+                  <h3>Usb Type 6</h3>
+                  <button class="btn btn-danger">Pre Order</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <h6 class="text-center text-info">Reviews</h6>
+      <section class="testimonials py-5 text-white px-1 px-md-5 margin-top-xl">
+        <img
+          src="https://raw.githubusercontent.com/solodev/testimonial-slider-fullwidth/master/solodev-logo-stacked.png"
+          class="icon-overlay"
+          alt=""
+        />
+        <div class="container" id="Reviews">
+          <div class="row">
+            <div class="col-sm-12">
+              <h2 class="pt-2 text-center font-weight-bold">
+                Our Customers Are Seeing Big Results
+              </h2>
+
+              <div class="carousel-controls testimonial-carousel-controls">
+                <div
+                  class="control d-flex align-items-center justify-content-center prev mt-3"
+                >
+                  <i class="fa fa-chevron-left"></i>
+                </div>
+                <div
+                  class="control d-flex align-items-center justify-content-center next mt-3"
+                >
+                  <i class="fa fa-chevron-right"></i>
+                </div>
+
+                <div class="testimonial-carousel">
+                  <div class="h5 font-weight-normal one-slide mx-auto">
+                    <div
+                      class="testimonial w-100 px-3 text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center"
+                    >
+                      <div class="message text-center blockquote w-100">
+                        "They’ve been consistent throughout the years and grown
+                        together with us. Even as they’ve grown, they haven’t
+                        lost sight of what they do. Most of their key resources
+                        are still with them, which is also a testament to their
+                        organization."
+                      </div>
+                      <div class="blockquote-footer w-100 text-white">
+                        Atif, WebCorpCo
+                      </div>
+                    </div>
+                  </div>
+                  <div class="h5 font-weight-normal one-slide mx-auto">
+                    <div
+                      class="testimonial w-100 px-3 text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center"
+                    >
+                      <div class="message text-center blockquote w-100">
+                        "Miami Beach Visitor and Convention Authority uses
+                        Solodev to craft a website capable of representing its
+                        diverse residents. The website features a newsroom with
+                        the latest events, an interactive calendar, and a mobile
+                        app that puts the resources of VCA at a user’s
+                        fingertips."
+                      </div>
+                      <div class="blockquote-footer w-100 text-white">
+                        Tahmid, WebCorpCo
+                      </div>
+                    </div>
+                  </div>
+                  <div class="h5 font-weight-normal one-slide mx-auto">
+                    <div
+                      class="testimonial w-100 px-3 text-center d-flex flex-direction-column justify-content-center flex-wrap align-items-center"
+                    >
+                      <div class="message text-center blockquote w-100">
+                        Solodev is a great company to partner with! We are
+                        extremely happy with the software, service, and support.
+                      </div>
+                      <div class="blockquote-footer w-100 text-white">
+                        Nazmul, WebCorpCo
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer
+        class="bg-dark d-flex justify-content-center align-items-center flex-column"
+      >
+        <h1>Mobile:018364788</h1>
+        <h2>email:dhflkasdhf</h2>
+        <p>
+          Follow us on
+          <a href="http://www.facebook.com">Facebook</a>
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
